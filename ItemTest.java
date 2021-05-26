@@ -13,8 +13,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author tejar
  */
 public class ItemTest {
+    Item item;
     
     public ItemTest() {
+        item = new Item("bullet","this is a bullet",10);
     }
 
     /**
@@ -22,6 +24,9 @@ public class ItemTest {
      */
     @Test
     public void testGetName() {
+        String expected = "bullet";
+        String actual = item.getName();
+        assertEquals(expected, actual);
     }
 
     /**
