@@ -34,6 +34,9 @@ public class ItemTest {
      */
     @Test
     public void testGetDescription() {
+        String expected = "this is a bullet";
+        String actual = item.getDescription();
+        assertEquals(expected, actual);
     }
 
     /**
@@ -41,6 +44,9 @@ public class ItemTest {
      */
     @Test
     public void testGetPower() {
+        int expected = 10;
+        int actual = item.getPower();
+        assertEquals(expected, actual);
     }
     
 }
