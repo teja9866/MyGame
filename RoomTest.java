@@ -57,6 +57,10 @@ public class RoomTest {
      */
     @Test
     public void testGetRoomItem() {
+        String expected = "castle";
+        String actual = item.GetCurrentRoom;
+        assertEquals(expected, actual);
+       
     }
 
     /**
