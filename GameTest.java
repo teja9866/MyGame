@@ -15,6 +15,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class GameTest {
     
     public GameTest() {
+        long timeStart = System.currentTime();
+        timeCounter = 50;
+        parser = new Parser();
+        player = new Player();
+        roons = new RoomCreation();
+        currentRoom = room.getRoom("castle");
     }
 
     /**
